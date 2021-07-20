@@ -170,7 +170,7 @@ font-size: x-large;
 .all-browsers {
   margin: 0;
   padding: 5px;
-  background-color: #F4D88D;
+  background-color: white;
 }
 
 .all-browsers > h1, .browser {
