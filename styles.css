@@ -1,7 +1,7 @@
 /* Body styles */
 body{
 font-family:'open sans', sans-serif;
-background-color: #1ED3B0;	
+background-color: #2DDDEB;	
 
 
 }	
@@ -36,7 +36,7 @@ nav .animation{
 	height:5px; /* this field is for type of highlit for box if given 100px full box will be highlighted*/
 	bottom:0;
 	z-index: 0;
-	background: red;
+	background: orange;
 	width: 100px;
 	border-radius: 8px;
 	transition: all .5s ease 0s;
@@ -93,7 +93,7 @@ nav .start-contact,a:nth-child(5):hover~.animation{
 
 .maintitle .main{
 text-align: center;
-font-family:Monotype Corsiva;
+font-family: 'Charm';
 font-size: xxx-large;
 color: white;
 
@@ -122,18 +122,102 @@ color: black;
 }
 
 /********************************************************* Profile Fields End ************************************************************/
+.descriptionName{
+	font-family: 'Courgette';
+}
+
 /********************************************************* Skills Fields Begin *************************************************************/
+.mytopskills{
+	font-family: 'Courgette';
+	color: Black;
+}
+
 .skills {
 	
-	font-family:arial;
+	font-family: 'Courgette';
 	color: Black;
 }
 
 
 /********************************************************* Skills Fields End *************************************************************/
+.projects{
+	font-family: 'Courgette';
+	color: Black;
+}
+
 
 .prjdiv{
 	font-family:arial;
+	color: Black;
+}
+
+.ultratechintern{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.Academicdetails{
+text-align:center;
+font-size: xx-large;
+
+
+}
+#bachname{
+font-size: x-large;
+
+}
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: #F4D88D;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: #79E4E8;	
+}
+
+.browser >  p {
+  margin: 4px;
+  font-size: 90%;
+  text-align: center;
+}
+
+.academicdata{
+text-align: center;
+font-family:Monotype Corsiva;
+font-size: xx-large;
+
+}
+
+.myacademics{
+	text-align: center;
+font-family:Monotype Corsiva;
+font-size: xxx-large;
+}
+
+.myach{
+font-family: 'Courgette';
+	color: Black;
+}
+
+.co-curricular{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.cert{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.mycontact{
+	font-family: 'Courgette';
 	color: Black;
 }
 
