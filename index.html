@@ -1,226 +1,223 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<title>Bala Subrahmanyam Boyina Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon"   type="image/png"   href="images/Balu.jpg">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+/* Body styles */
+body{
+font-family:'open sans', sans-serif;
+background-color: #2DDDEB;	
 
-<link rel="stylesheet" type="text/css" href="styles.css">
 
-</head>
-<!-- head fields End-->
+}	
 
-<body  style="margin-left:15%; padding:5px 1px;height:auto; margin-right:15%;">
+/************************************ "Navigation Bar Fields Begin" ****************************************************************************************/
 
-<!-- ********************************************************* Navigation Bar Fields Begin ************************************************************* -->
-
-	<nav class="navigationbar">
+nav{
+	position: relative;
+	margin: 20px auto 0;
+	width: 600px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size:0;
+	box-shadow:10px 10px 10px 0 rgba(0,0,0,.5);
 	
-		<a href="#">Home</a>
-		<a href="#skilset">My Resume</a>
-		<a href="#sidebarprojects">Projects</a>
-		<a href="#sidebarach">Achievements</a>
-		<a href="#contactfield">Contact</a>
-		
-		<div class="animation start-home"></div>
+}
+
+nav a{
+	font-size:15px;
+	text-transform:uppercase;
+	color:white;
+	text-decoration:none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height:5px; /* this field is for type of highlit for box if given 100px full box will be highlighted*/
+	bottom:0;
+	z-index: 0;
+	background: orange;
+	width: 100px;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+	width: 100px;	
+}
+
+nav .start-home,a:nth-child(1):hover~.animation{
+	width:100px;
+	left:0;
 	
-	</nav>
-<!-- ********************************************************* Navigation Bar Fields Begin ************************************************************* -->	
-<!-- ********************************************************* Main Title Fields Begin ************************************************************* -->
-
-<div class="maintitle">
-<p class="main"><b>Hi, I'm Bala Subrahmanyam Boyina!</b></p>
-<p class="degree"><em>Software Engineer at </em> TATA CONSULTANCY SERVICES Ltd.&nbsp; &nbsp; | &nbsp; &nbsp; <em>Bachelors in</em> MECHANICAL ENGINEERING,<em>SRKREC.</em></P>
-</div>
-<!--********************************************************* Main Title Fields End *************************************************************-->	
-<!--********************************************************* Profile Fields Begin *************************************************************-->	
-<div class="profilephoto">
-
-<img class="profile" image src="images/Balu.jpg">
-</div>
-<!--********************************************************* Profile Fields End *************************************************************-->	
-<!-- ********************************************************* Description Field ************************************************************-->
-<div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Bala Subrahmanyam Boyina</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Software Engineer at Tata Consultancy Services,working on Portal development in Tamil Nadu Ease of Doing Business Project. <br><br> Completed Bachelors in Mechanical engineering from Sagi Rama Krishnam Raju College
-<br><br>
-Completed summer interniship at Ultra Tech Ltd. Ananthapuram, Andhra Pradesh.
-<br><br>
+}
 
 
-    </p>
-
-<!--********************************************************* Skills Fields Begin *************************************************************-->
-<br>
-<a name="skilset"></a>
-<h2 class="mytopskills">My Top Skill's</h2>
-<br>
-
-<p class="designbar">AutoCAD & CATIA </p>
-<div class="w3-light-grey">
-  <div class="w3-blue" style="height:24px;width:90%"></div>
-</div>
-
-<p class="designbar">Java programming</p>
-<div class="w3-light-grey">
-  <div class="w3-blue" style="height:24px;width:80%"></div>
-</div>
-<p class="designbar">ProE/CREO</p>
-<div class="w3-light-grey">
-  <div class="w3-blue" style="height:24px;width:75%"></div>
-</div>
-
-<h2 class="skills">Skill's</h2>
-<p class="skills"> AutoCAD &nbsp CATIA &nbsp PROE/CREO &nbsp C - programming &nbsp JAVA &nbsp HTML &nbsp CSS &nbsp MySQL &nbsp python &nbsp Jquery &nbsp Microsoft Office &nbsp Photoshop 
-<!--********************************************************* Skills Fields End *************************************************************-->
-<!-- *********************************************************Xperiance Box Begin *************************************************************-->
-<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-third w3-section">
-        <span class="w3-xlarge">1+</span><br>
-        Years’ Work Experience 
-      </div>
-      <div class="w3-third w3-section">
-        <span class="w3-xlarge">4+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-third w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Courses Completed
-      </div>
-    </div>
-<!-- *********************************************************Xperiance Box End *************************************************************-->
-<!-- *********************************************************Resume Fields Start *************************************************************-->
- <a name="resume" href="documents/Bala_Subrahmanyam.pdf" target="_blank"><button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button></a>
-<!-- *********************************************************Resume Fields End *************************************************************-->
-
-<!-- *********************************************************Project Fields Start *************************************************************-->
-<a name="sidebarprojects"></a>
-<div class=prjdiv>
-<h2 class=projects>Projects:</h2>
-<dl id=projects>
-<ol class=myprojects>
-
-<!-- tcs project field-->
-<dt class= tcsproj>1. Working in <strong>Tata Consultance services</strong> as an Assistant system engineer.</dt> 
-	<dd id=tcstitle><strong>Title:</strong> Tamil Nadu Ease of Doing business (TNEODB)</dd>
-	<dd id=tcsrole><strong>Role:</strong>&nbsp;Application developer</dd>
-	<dd id=tcsduration><strong>Duration:</strong> December 2020 – Present</dd>
-	<dd id=tcsdesc><strong>Description:</strong>We are designing an user friendly online platform for facilitating Single window approvals for global investors and large scale industries in the state of Tamil Nadu by using technologies  <i> "JAVA", "SQL", and "JQuery"</i>.</dd>
-<br>
-<!-- btech final project-->
-<dt class= btechfp><strong>2.</strong>
-	<dd id=fptitle><strong>Title:</strong>Performance Evaluation Of Single Cylinder Diesel Engine Using Cotton Seed Oil Blend.</dd>
-	<dd id=fpdur><strong>Duration:</strong> 6 months</dd>
-	<dd id=fpsize><strong>Team Size:</strong> 4 members</dd>
-	<dd id=fpdesc><strong>Description:</strong>Experimented on Cotton Seed Oil Blend in various proportions and found the most efficient Blend that can compensate use of direct petroleum Products.</dd>
-
-<br>
-<!-- mini project -->
-<dt class=miniproj><strong>3.</strong></dt>
-	<dd id=mptitle><strong>Title:</strong>Land Water Spider Bot Model.</dd>
-	<dd id=mpdur><strong>Duration:</strong> 1 month</dd>
-	<dd id=mpsize><strong>Team Size:</strong>5 members</dd>
-	<dd id=mpdesc><strong>Description:</strong>: Using the Theo Jansen model of Spider bot, we advanced the model to move on the water bodies by using propulsion and other floating equipment.</dd>                                      
-<br>
-<!-- RC air craft workshop-->
-<dt class=rcproj><strong>4.</strong></dt>
-	<dd id=rctitle><strong>Title:</strong> RC AIR CRAFT DESIGN</dd>
-	<dd id=rcdur><strong>Duration:</strong> 2 Days</dd>
-	<dd id=rcsize><strong>Team Size:</strong> 5 members</dd>
-	<dd id=rcdesc><strong>Description:</strong>Learnt about the basics of Aero Dynamics and fabrication of a RC Air CRAFT.</dd>
-
-</ol>
-</dl>
-<br>
-</div>
-<!-- *********************************************************Project Fields Start *************************************************************-->
-<!--********************************************************** INTERNSHIP FIELDS****************************************************************** -->
-<div class="myintern">
-<h2 class = ultratechintern>Ultra Tech Ltd. Internship</h2>
-<dl id=internship>
-<ol id=internship
-<dt class=ultraintern></dt><br>
+a:nth-child(2){	
+	width: 110px;	
+}
+nav .start-academics,a:nth-child(2):hover~.animation{
+	width:110px;
+	left:100px;
 	
-<dd id=ultra>Under taken a summer internship program on Thermal Power Plant in Ultra Tech Limited, A.P.Cement works, Tadipatri.</dd>
-<dd id=ultradesc><strong>Description:</strong>learnt about the working of a Thermal power plant, the different process of handling, different techniques they use for Power and Resource management and utilizing the by-products from power plant. </dd>
-</ol>
-</dl>
-<br>
-</div>
-<!--********************************************************** INTERNSHIP FIELDS END****************************************************************** -->
+}
 
-<!--*********************************************************** ACHIEVEMENTS FIELDS *********************************************************************-->
-<a name="sidebarach"></a>
-<h2 class="myach"> Achievments</h2>
-<div class="ach">
-<dl id=achie>
-<ol class=achie>
-<dt class=rcproj><strong></strong></dt>
-	<dd id=rctitle><b>1.</b>Delivered a presentation on <strong>GRAPHENE</strong> in A National level technical symposium <strong>‘NIPUNA’</strong> conducted by ;SRKR ENGINEERING COLLEGE on 17th and 18th February 2017.</dd>
-	<dd id=rcdur><b>2.</b>Delivered a presentation on <strong>E-CALL</strong> in A National level technical symposium <strong>‘SANKETA2K18’</strong> conducted by SRKR ENGINEERING COLLEGE on 8th and 9th February 2018.</dd>
-	<dd id=rcsize><b>3.</b>Participated in <strong>FORMULE KART DESIGN CHALLEGE</strong> (FKDC) CONDUCTED BY <strong>FMAE</strong> on 8th February 2019 to 10th February 2019 in PUNE.</dd>
-	<dd id=rcdesc><b>4.</b>Stood as <b>WINNERS</b> in <b>‘BASKET BALL’</b> in the competition conducted on the eve of <b>ANNUAL DAY CELEBRATIONS 2018</b>.</dd>
-	<dd id=rcdesc><b>5.</b>Stood as <b>WINNERS</b> in <b>‘FOOT BALL’</b> in the competition conducted on the eve of <b>ANNUAL DAY CELEBRATIONS</b> in <b>2019</b> and <b>Runners in 2020</b>.</dd>
-	<dd id=rcdesc><b>6.</b>I am a member in the SRKR college Foot Ball team for two consecutive years <b>2019</b> and <b>2020</b>.</dd>
-</ol>
-</dl>
-<br>
-<!--*********************************************************** Co-Curricular Activities *********************************************************************-->
-<h2 class=co-curricular>Co-Curricular Activities</h2>
-<dl id=cocact>
-<ol class=cococt>
-<dt class=rcct><strong></strong></dt>
-	<dd id=rctitle><b>1.</b>Participated in <b>‘ROBO RUSH’</b> and <b>‘ROBO SOCCER’</b> conducted in SRKR ENGINEERING COLLEGE.</dd>
-	<dd id=rcdur><b>2.</b>Volunteered for <b>‘SMART INDIA HACKATHON’</b>2019.</dd>
-	<dd id=rcsize><b>3.</b>Attended for a one day National Workshop on <b>INNOVATION IN MATERIAL AND MANUFACTURING</b> organized by dept. of  MECHANICAL ENGINEERING in association with <b>THE INSTITUTE OF ENGINEERS (INDIA)</b> on 1st March 2019.</dd>	
-</ol>
-</dl>
-<br>
-<!--*********************************************************** Certification Activities *********************************************************************-->
-<h2 class=cert>Certifications</h2>
-<dl id=certf>
-<ol class=certfic>
-<dt class=rcct><strong></strong></dt>
-	<dd id=rctitle><b>1.</b>Completed <b>AutoCAD</b> course examined by <b>WAVE InfoTech</b> conducted by SRIDEVI TECHNO BYTES, Bhimavaram during ’11-01-2018 to 26-02-2018’  and obtained A+ grade.</dd>
-	<dd id=rcdur><b>2.</b>Completed <b>CATIA</b> course examined by <b>WAVE InfoTech</b> conducted by SRIDEVI TECHNO BYTES, Bhimavaram during  ’13-07-2018 to 28-08-2018’ and obtained A+ grade.</dd>
-	<dd id=rcsize><b>3.</b>Completed <b>Pro E/PTC Creo</b> course in <b>ALPHA Cad</b> institute, Hyderabad during ‘13-05-2019’ to ‘12-06-2019’.</dd>	
-</ol>
-</dl>
-<br>
+a:nth-child(3){
+	width: 100px;	
+}
+nav .start-projects,a:nth-child(3):hover~.animation{
+	width:100px;
+	left:210px;
+	
+}
 
-<!--*********************************************************** Contact Info *********************************************************************-->
-<a name="contactfield"></a>
-<div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h2 class="w3-text-Black">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+a:nth-child(4){
+	width: 160px;	
+}
+nav .start-achievements,a:nth-child(4):hover~.animation{
+	width:160px;
+	left:310px;
+	
+}
+a:nth-child(5){
+	width: 120px;
+}
+nav .start-contact,a:nth-child(5):hover~.animation{
+	width:120px;
+	left:470px;
+}	
 
-    <div class="w3-section">
-     
-      <p><i class="fa fa-phone fa-fw w3-text-Black w3-xxlarge w3-margin-right"></i> Phone: +91 9666702087</p>
-      <p><a href="mailto:boyinabalu56@gmail.com" target="_blank" class="w3-hover-text-black"><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Boyinabalu56@gmail.com</a></p>
-	  <p><a href="documents/Bala_Subrahmanyam.pdf" target="_blank" class="w3-hover-text-black"><i class="fa fa-download fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Download Resume</a></p>
-	  <p><a href="#" target="_blank" class="w3-hover-text-black"><i class="fa fa-arrow-up fa-fw w3-text-black w3-xxlarge w3-right"> </i> </a></p>
-	  
-     
-    </div><br>
+/************************************ "Navigation Bar Fields END" ****************************************************************************************/
 
- <!-- Footer -->
-  <footer class="w3-content w3-padding-40 w3-text-grey w3-xlarge">
-    <a href="https://www.facebook.com/boyina.balu.4/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://instagram.com/balu_boyina?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.snapchat.com/add/nani_798" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/BaluBoyina1" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/bala-subrahmanyam-boyina-a8991b164/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">Made by <a href="mailto:boyinabalu56@gmail.com" target="_blank" class="w3-hover-text-green">Bala Subrahmanyam</a></p>
-  <!-- End footer -->
-  </footer>
+/********************************************************* Main Title Fields Begin *************************************************************/
 
-</body>
-</html>	
+.maintitle .main{
+text-align: center;
+font-family: 'Charm';
+font-size: xxx-large;
+color: white;
+
+}	
+
+.maintitle .degree{
+	
+text-align: center;
+position: relative;
+top: -15px;
+font-family:arial;
+font-size: large;
+color: black;
+}
+/********************************************************* Main Title Fields End *************************************************************/
+/********************************************************* Profile Fields Begin *************************************************************/
+
+
+.profilephoto .profile{
+	
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30%;	
+}
+
+/********************************************************* Profile Fields End ************************************************************/
+.descriptionName{
+	font-family: 'Courgette';
+}
+
+/********************************************************* Skills Fields Begin *************************************************************/
+.mytopskills{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.skills {
+	
+	font-family: 'Courgette';
+	color: Black;
+}
+
+
+/********************************************************* Skills Fields End *************************************************************/
+.projects{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+
+.prjdiv{
+	font-family:arial;
+	color: Black;
+}
+
+.ultratechintern{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.Academicdetails{
+text-align:center;
+font-size: xx-large;
+
+
+}
+#bachname{
+font-size: x-large;
+
+}
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: #F4D88D;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: #79E4E8;	
+}
+
+.browser >  p {
+  margin: 4px;
+  font-size: 90%;
+  text-align: center;
+}
+
+.academicdata{
+text-align: center;
+font-family:Monotype Corsiva;
+font-size: xx-large;
+
+}
+
+.myacademics{
+	text-align: center;
+font-family:Monotype Corsiva;
+font-size: xxx-large;
+}
+
+.myach{
+font-family: 'Courgette';
+	color: Black;
+}
+
+.co-curricular{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.cert{
+	font-family: 'Courgette';
+	color: Black;
+}
+
+.mycontact{
+	font-family: 'Courgette';
+	color: Black;
+}
+
